@@ -184,7 +184,7 @@ const defaultContact: ContactInfo = {
   address: 'Embizeni, Lupindo A/A, Matatiele, Eastern Cape, 4730',
   phone: '+27 84 620 6248',
   phone2: '+27 76 286 6884',
-  email: 'kmohlafuno@gmail.com',
+  email: 'principal@phumeleleths.co.za',
   monThu: '07:30 – 15:30',
   friday: '07:30 – 13:30',
   weekend: 'Closed',
