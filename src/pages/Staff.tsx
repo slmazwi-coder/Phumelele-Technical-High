@@ -14,7 +14,7 @@ const staffData: StaffMember[] = [
     name: 'Mr. Ramabele',
     position: 'Principal',
     category: 'Leadership',
-    image: './assets/about/principal.jpg',
+    image: './assets/about/FB_IMG_1778353894461.jpg',
   },
   {
     name: 'Deputy Principal',
