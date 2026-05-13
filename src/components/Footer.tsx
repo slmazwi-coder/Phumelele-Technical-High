@@ -42,7 +42,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <Mail size={16} className="shrink-0 mt-0.5" />
-                <span className="break-all">kmohlafuno@gmail.com</span>
+                <span className="break-all">principal@phumeleleths.co.za</span>
               </li>
             </ul>
           </div>
