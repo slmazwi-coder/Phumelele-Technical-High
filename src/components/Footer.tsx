@@ -38,7 +38,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="shrink-0" />
-                <span>+27 72 715 0626</span>
+                <span>+27 84 620 6248</span>
               </li>
               <li className="flex items-start gap-2">
                 <Mail size={16} className="shrink-0 mt-0.5" />
