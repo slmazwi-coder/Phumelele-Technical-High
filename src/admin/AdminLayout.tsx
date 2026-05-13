@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { logout } from './utils/storage';
-import { Newspaper, Info, Trophy, FileText, Activity, Users, Phone, LogOut, LayoutDashboard, ArrowLeft } from 'lucide-react';
+import { Newspaper, Info, Trophy, FileText, Activity, Users, Phone, LogOut, LayoutDashboard, ArrowLeft, FolderOpen } from 'lucide-react';
 
 const adminTabs = [
   { path: '/admin', label: 'Dashboard', icon: LayoutDashboard },
@@ -11,6 +11,7 @@ const adminTabs = [
   { path: '/admin/documents', label: 'Documents', icon: FileText },
   { path: '/admin/activities', label: 'Activities', icon: Activity },
   { path: '/admin/applications', label: 'Applications', icon: Users },
+  { path: '/admin/student-documents', label: 'Student Docs', icon: FolderOpen },
   { path: '/admin/contact', label: 'Contact', icon: Phone },
 ];
 

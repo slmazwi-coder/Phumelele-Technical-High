@@ -50,6 +50,8 @@ export interface Application {
   lastGradeCompleted?: string;
   medicalInfo?: string;
   stream?: string; // Civil / Electrical / Mechanical / EGD / Woodworking / Construction
+  applicationType?: string;
+  boardingType?: string;
   uploads: UploadedFile[];
   subjectMarks: SubjectMark[];
   averageMark: number;
