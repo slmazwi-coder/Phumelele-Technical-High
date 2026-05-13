@@ -11,7 +11,7 @@ interface StaffMember {
 
 const staffData: StaffMember[] = [
   {
-    name: 'Mr. K Mohlafuno',
+    name: 'Mr. Ramabele',
     position: 'Principal',
     category: 'Leadership',
     image: './assets/about/principal.jpg',

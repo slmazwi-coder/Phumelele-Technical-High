@@ -79,9 +79,9 @@ You help parents, learners, guardians and community members with anything about 
 School details:
 - Name: Phumelele Technical High School (Phumelele Comp Tech Senior Secondary School)
 - Location: Embizeni, Lupindo A/A, Matatiele, Eastern Cape, 4730
-- Phone: +27 72 715 0626 / +27 76 286 6884
+- Phone: +27 84 620 6248 / +27 76 286 6884
 - Email: kmohlafuno@gmail.com
-- Principal: Mr. K Mohlafuno
+- Principal: Mr. Ramabele
 - School hours: Monday–Thursday 07:30–15:30, Friday 07:30–13:30
 - Grades: Grade 8 to Grade 12
 - Technical Streams: Civil Technology, Electrical Technology, Mechanical Technology, EGD, Woodworking, Construction
@@ -94,7 +94,7 @@ async function askGemini(userMessage: string): Promise<string> {
   try {
     const apiKey = (typeof process !== 'undefined' && process.env?.GEMINI_API_KEY) || '';
     if (!apiKey) {
-      return 'The chatbot is currently being set up. Please contact the school directly at +27 72 715 0626 or kmohlafuno@gmail.com.';
+      return 'The chatbot is currently being set up. Please contact the school directly at +27 84 620 6248 or kmohlafuno@gmail.com.';
     }
 
     const { GoogleGenAI } = await import('@google/genai');
@@ -113,7 +113,7 @@ async function askGemini(userMessage: string): Promise<string> {
     return text;
   } catch (err) {
     console.error('[Chatbot] Gemini request failed:', err);
-    return 'I\'m having trouble connecting right now. Please contact the school directly at +27 72 715 0626 or kmohlafuno@gmail.com.';
+    return 'I\'m having trouble connecting right now. Please contact the school directly at +27 84 620 6248 or kmohlafuno@gmail.com.';
   }
 }
 
@@ -181,7 +181,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
     } catch {
       setMessages((prev) => [
         ...prev,
-        { id: uid(), role: 'bot', text: 'Something went wrong. Please contact the school at +27 72 715 0626.', createdAt: Date.now() },
+        { id: uid(), role: 'bot', text: 'Something went wrong. Please contact the school at +27 84 620 6248.', createdAt: Date.now() },
       ]);
     } finally {
       setIsTyping(false);

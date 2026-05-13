@@ -182,7 +182,7 @@ export const setApplications = (items: Application[]) => setItems('pths_applicat
 
 const defaultContact: ContactInfo = {
   address: 'Embizeni, Lupindo A/A, Matatiele, Eastern Cape, 4730',
-  phone: '+27 72 715 0626',
+  phone: '+27 84 620 6248',
   phone2: '+27 76 286 6884',
   email: 'kmohlafuno@gmail.com',
   monThu: '07:30 – 15:30',
@@ -200,7 +200,7 @@ const defaultAbout: AboutInfo = {
     'Our school is unique in the region for its strong focus on vocational and technical subjects. The curriculum is designed to empower learners with the necessary skills to succeed in the workplace, in further studies, and in entrepreneurship.',
     'Phumelele THS falls under the Alfred Nzo District Municipality and is a Public School registered under the Eastern Cape Department of Education (National EMIS No: 200501431). The school is committed to excellence, discipline, and producing well-rounded technical graduates.',
   ],
-  principalName: 'Mr. K Mohlafuno',
+  principalName: 'Mr. Ramabele',
   principalTitle: 'Principal',
   principalMessage: [
     'Welcome to Phumelele Technical High School. At Phumelele, we believe that technical education is the foundation of economic empowerment. Our learners do not just learn theory — they build, wire, design, and create real things.',
