@@ -8,8 +8,8 @@ export const About = () => {
   const [campusFailed, setCampusFailed] = useState(false);
   const [principalFailed, setPrincipalFailed] = useState(false);
 
-  const campusImageUrl = '/assets/about/campus.jpg';
-  const principalImageUrl = '/assets/about/principal.jpg';
+  const campusImageUrl = '/assets/about/FB_IMG_1778353894461.jpg';
+  const principalImageUrl = '/assets/about/FB_IMG_1778353894461.jpg';
 
   useEffect(() => {
     setData(getAbout());
