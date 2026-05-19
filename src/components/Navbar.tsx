@@ -28,7 +28,7 @@ export const Navbar = () => {
 
             <Link to="/" className="flex items-center gap-3 min-w-0 flex-1">
               <div className="h-11 w-11 shrink-0 rounded-xl bg-white flex items-center justify-center overflow-hidden shadow-md" style={{ border: '2px solid #F5A800' }}>
-                <img src="./assets/Copilot_20260509_220231.png" alt="PTHS" className="h-full w-full object-cover" />
+                <img src="/assets/logo.png" alt="Phumelele THS Logo" className="h-9 w-9 object-contain" />
               </div>
               <div className="min-w-0">
                 <span className="md:hidden text-sm font-bold block leading-tight text-white">

@@ -3,13 +3,11 @@ import { AnimatePresence, motion } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
-  { url: './assets/Copilot_20260509_220231.png', caption: 'Phumelele Technical High School' },
-  { url: './assets/about/FB_IMG_1778353894461.jpg', caption: 'Our campus' },
-  { url: './assets/hero/FB_IMG_1778353809991.jpg', caption: 'Technical excellence' },
-  { url: './assets/hero/FB_IMG_1778353815891.jpg', caption: 'Building the future' },
-  { url: './assets/hero/FB_IMG_1778353824026.jpg', caption: 'Hands-on learning' },
-  { url: './assets/hero/FB_IMG_1778353894461.jpg', caption: 'Our learners, our pride' },
-  { url: './assets/hero/FB_IMG_1778353933928.jpg', caption: 'Skills for life' },
+  { url: '/assets/hero/hero1.jpg', caption: 'Hands-on learning' },
+  { url: '/assets/hero/hero2.jpg', caption: 'Technical equipment & tools' },
+  { url: '/assets/hero/hero3.jpg', caption: 'Electrical technology in action' },
+  { url: '/assets/hero/hero4.jpg', caption: 'Our learners, our pride' },
+  { url: '/assets/hero/hero5.jpg', caption: 'A legacy of excellence' },
 ];
 
 export const Hero = () => {
@@ -73,12 +71,12 @@ export const Hero = () => {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="mb-5"
         >
-          <img
-            src="./assets/Copilot_20260509_220231.png"
-            alt="Phumelele THS Logo"
-            className="w-20 h-20 md:w-24 md:h-24 rounded-full shadow-2xl mx-auto object-cover"
-            style={{ border: '3px solid #F5A800', background: 'rgba(0,53,128,0.8)' }}
-          />
+          <div
+            className="w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center shadow-2xl mx-auto overflow-hidden"
+            style={{ border: '3px solid #F5A800', background: 'rgba(255,255,255,0.95)' }}
+          >
+            <img src="/assets/logo.png" alt="Phumelele THS Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain" />
+          </div>
         </motion.div>
 
         <motion.h1
@@ -98,7 +96,7 @@ export const Hero = () => {
           className="text-base md:text-xl font-light italic mb-8"
           style={{ color: 'rgba(245,168,0,0.8)' }}
         >
-          "Empowering Learners Through Technical Excellence"
+          "Towards Greater Horizons"
         </motion.p>
 
         <motion.div

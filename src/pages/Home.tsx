@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Award, TrendingUp, Users, Megaphone, ArrowRight, Wrench } from 'lucide-react';
+import { Award, TrendingUp, Users, Megaphone, ArrowRight, Wrench, Camera } from 'lucide-react';
 
 const stats = [
   { label: 'Technical Streams', value: '6', icon: Wrench },
@@ -15,6 +15,15 @@ const streams = [
   'Engineering Graphics & Design',
   'Woodworking',
   'Construction',
+];
+
+const campusImages = [
+  { url: '/assets/hero/hero1.jpg', caption: 'Practical skills development' },
+  { url: '/assets/hero/hero2.jpg', caption: 'Technical equipment' },
+  { url: '/assets/hero/hero3.jpg', caption: 'Electrical technology lab' },
+  { url: '/assets/hero/hero4.jpg', caption: 'Staff achievements' },
+  { url: '/assets/hero/hero5.jpg', caption: 'Awards & trophies' },
+  { url: '/assets/about/campus.jpg', caption: 'Our campus' },
 ];
 
 export const Home = () => {
@@ -104,7 +113,40 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center gap-3 mb-2">
+            <Camera size={24} className="text-school-navy" />
+            <h2 className="section-title mb-0">Campus Life</h2>
+          </div>
+          <p className="text-center text-gray-500 mb-10">A glimpse into life at Phumelele Technical High School</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {campusImages.map((img, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.35 }}
+                className="group relative rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-white"
+              >
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={img.url}
+                    alt={img.caption}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <p className="text-white text-sm font-semibold">{img.caption}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="section-title">Our Vision</h2>
           <p className="text-2xl text-gray-700 leading-relaxed font-light italic">
